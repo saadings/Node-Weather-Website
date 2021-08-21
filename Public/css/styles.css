@@ -1,4 +1,4 @@
-body{
+body {
     color: #333333;
     font-family: Arial;
     max-width: 650px;
@@ -10,7 +10,7 @@ body{
     min-height: 100vh;
 }
 
-footer{
+footer {
     color: indigo;
     border-top: 1px solid darkgray;
     margin-top: 16px;
