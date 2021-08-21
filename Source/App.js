@@ -62,33 +62,27 @@ app.get('/weather', (req, res) => {
             })
         }
 
-        Forecast(Lat, Long, (Error, {Temperature, Humidity, WeatherDescription, Location} = {}) =>{
+        Forecast(Lat, Long, (Error, {Location, ObservationTime, Temperature, Humidity, WeatherDescription, RainChance, WindSpeed, WindDirection , CloudCover, FeelsLike, Visibility, UVIndex} = {}) =>{
             if (Error)
             {
                 return res.send({Error})
             }
 
             res.send({
+                Location,
+                ObservationTime,
                 Temperature,
                 Humidity,
                 WeatherDescription,
-                Location
+                RainChance,
+                WindSpeed,
+                WindDirection,
+                CloudCover,
+                FeelsLike,
+                Visibility,
+                UVIndex
             })
         })
-    })
-})
-
-app.get('/products', (req, res)=>{
-    if  (!req.query.search)
-    {
-       return res.send({
-            Error: 'Please provide with a search title'
-       })
-    }
-
-    console.log(req.query.search)
-    res.send({
-        products: []
     })
 })
 

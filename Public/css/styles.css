@@ -53,3 +53,23 @@ button{
     color: white;
     padding: 8px;
 }
+
+.Temp{
+    color: red;
+}
+
+.Rain{
+    color: deepskyblue;
+}
+
+.Wind{
+    color: yellowgreen;
+}
+
+.Feels{
+    color: darkorange;
+}
+
+.Desc{
+    color: darkslategray;
+}
