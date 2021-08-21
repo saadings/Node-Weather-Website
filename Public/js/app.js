@@ -26,7 +26,7 @@ WeatherForm.addEventListener('submit', (event) =>{
             {
                 Msg1.textContent = 'Temperature is: ' + Data.Temperature + ' degree celsius and Humidity is: ' + Data.Humidity + '%'
                 Msg2.textContent = 'Chances of Rain are: ' + (Data.RainChance * 100) + '% and Cloud Cover is: ' + Data.CloudCover + '%'
-                Msg3.textContent = 'Wind Speed is: ' + Data.WindSpeed + 'km/h and Wind Direction is: ' + Data.WindDirection
+                Msg3.textContent = 'Wind Speed is: ' + Data.WindSpeed + ' km/h and Wind Direction is: ' + Data.WindDirection
                 Msg4.textContent = 'Feels Like: ' + Data.FeelsLike + ' degree celsius, Visibility is: ' + Data.Visibility + '% and UV Index is: ' + Data.UVIndex + '%'
                 Msg5.textContent = 'Weather outside is: ' + Data.WeatherDescription + ', the Location is: ' + Data.Location + ' and Observation Time is: ' + Data.ObservationTime
             }
