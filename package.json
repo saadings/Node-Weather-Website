@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node Source/App.js",
+    "build": "npm run build-js && npm run build-css",
     "dev": "nodemon Source/App.js -e js, hbs"
   },
   "keywords": [],
